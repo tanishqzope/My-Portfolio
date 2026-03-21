@@ -1,0 +1,36 @@
+18:50:30.911 Running build in Washington, D.C., USA (East) – iad1
+18:50:30.912 Build machine configuration: 2 cores, 8 GB
+18:50:31.037 Cloning github.com/tanishqzope/Tanishq-Zope-Portfolio (Branch: main, Commit: 2fab0b0)
+18:50:31.038 Previous build caches not available.
+18:50:33.481 Cloning completed: 2.443s
+18:50:33.932 Running "vercel build"
+18:50:34.583 Vercel CLI 50.34.2
+18:50:35.208 Running "install" command: `npm install`...
+18:50:39.593 npm error code ERESOLVE
+18:50:39.594 npm error ERESOLVE could not resolve
+18:50:39.594 npm error
+18:50:39.595 npm error While resolving: @vitejs/plugin-react@4.7.0
+18:50:39.595 npm error Found: vite@8.0.1
+18:50:39.595 npm error node_modules/vite
+18:50:39.596 npm error   dev vite@"^8.0.1" from the root project
+18:50:39.596 npm error
+18:50:39.596 npm error Could not resolve dependency:
+18:50:39.596 npm error peer vite@"^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0" from @vitejs/plugin-react@4.7.0
+18:50:39.596 npm error node_modules/@vitejs/plugin-react
+18:50:39.596 npm error   dev @vitejs/plugin-react@"^4.3.1" from the root project
+18:50:39.596 npm error
+18:50:39.596 npm error Conflicting peer dependency: vite@7.3.1
+18:50:39.596 npm error node_modules/vite
+18:50:39.596 npm error   peer vite@"^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0" from @vitejs/plugin-react@4.7.0
+18:50:39.596 npm error   node_modules/@vitejs/plugin-react
+18:50:39.597 npm error     dev @vitejs/plugin-react@"^4.3.1" from the root project
+18:50:39.597 npm error
+18:50:39.597 npm error Fix the upstream dependency conflict, or retry
+18:50:39.597 npm error this command with --force or --legacy-peer-deps
+18:50:39.597 npm error to accept an incorrect (and potentially broken) dependency resolution.
+18:50:39.598 npm error
+18:50:39.598 npm error
+18:50:39.598 npm error For a full report see:
+18:50:39.598 npm error /vercel/.npm/_logs/2026-03-21T13_20_37_006Z-eresolve-report.txt
+18:50:39.600 npm error A complete log of this run can be found in: /vercel/.npm/_logs/2026-03-21T13_20_37_006Z-debug-0.log
+18:50:39.633 Error: Command "npm install" exited with 1

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DEFAULT (Corporate / Light Mode) */
+:root.theme-corporate {
+  --color-base: #f5f7fa;
+  --color-navy: #e0e5ec;
+  --color-charcoal: #ffffff;
+  --color-cyan: #0047ab; 
+  --color-green: #10b981;
+  --color-purple: #4f46e5;
+  --color-red: #ef4444;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-surface-1: #ffffff;
+  --color-surface-2: #f3f4f6;
+  --color-border: #e5e7eb;
+  --glow-cyan: rgba(0, 71, 171, 0.4);
+  --glow-green: rgba(16, 185, 129, 0.4);
+}
+
+/* CYBER (Dark Mode) */
+:root.theme-cyber, :root {
+  --color-base: #0a0a0a;
+  --color-navy: #0a0e1a;
+  --color-charcoal: #111111;
+  --color-cyan: #00f0ff;
+  --color-green: #00ff41;
+  --color-purple: #bf00ff;
+  --color-red: #ff003c;
+  --color-text-primary: #ffffffdd;
+  --color-text-secondary: #888888;
+  --color-surface-1: #1a1a1a;
+  --color-surface-2: #222222;
+  --color-border: #333333;
+  --glow-cyan: rgba(0, 240, 255, 0.8);
+  --glow-green: rgba(0, 255, 65, 0.8);
+}
+
+@layer base {
+  body {
+    @apply bg-cyber-base text-cyber-textPrimary font-mono m-0 p-0 overflow-x-hidden;
+    background-image: theme('backgroundImage.radial-navy');
+    background-origin: border-box;
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron tracking-wider;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+  }
+}
+
+@layer utilities {
+  .text-glow-cyan {
+    text-shadow: 0 0 10px var(--glow-cyan), 0 0 20px rgba(0, 240, 255, 0.4);
+  }
+  .text-glow-green {
+    text-shadow: 0 0 10px var(--glow-green), 0 0 20px rgba(0, 255, 65, 0.4);
+  }
+  .box-glow-cyan {
+    box-shadow: 0 0 15px var(--glow-cyan);
+  }
+  .box-glow-purple {
+    box-shadow: 0 0 15px rgba(191, 0, 255, 0.5);
+  }
+  .bg-grid-cyber {
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  .scanlines {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.1)
+    );
+    background-size: 100% 4px;
+  }
+  
+  .glitch-hover {
+    position: relative;
+    overflow: hidden;
+  }
+  .glitch-hover::before, .glitch-hover::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: inherit;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+  }
+  .group:hover .glitch-hover::before {
+    opacity: 0.6;
+    animation: glitch-anim-1 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    mix-blend-mode: screen;
+    filter: drop-shadow(3px 0 0 rgba(0,240,255,1));
+  }
+  .group:hover .glitch-hover::after {
+    opacity: 0.6;
+    animation: glitch-anim-2 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite reverse;
+    mix-blend-mode: color-burn;
+    filter: drop-shadow(-3px 0 0 rgba(255,0,60,1));
+  }
+  
+  @keyframes glitch-anim-1 {
+    0% { clip-path: inset(20% 0 80% 0); transform: translate(-3px, 1px); }
+    20% { clip-path: inset(60% 0 10% 0); transform: translate(3px, -1px); }
+    40% { clip-path: inset(40% 0 50% 0); transform: translate(1px, 3px); }
+    60% { clip-path: inset(80% 0 5% 0); transform: translate(-1px, -3px); }
+    80% { clip-path: inset(10% 0 70% 0); transform: translate(3px, 1px); }
+    100% { clip-path: inset(30% 0 50% 0); transform: translate(-3px, -1px); }
+  }
+  @keyframes glitch-anim-2 {
+    0% { clip-path: inset(10% 0 60% 0); transform: translate(3px, -1px); }
+    20% { clip-path: inset(80% 0 5% 0); transform: translate(-3px, 1px); }
+    40% { clip-path: inset(30% 0 40% 0); transform: translate(1px, -3px); }
+    60% { clip-path: inset(50% 0 30% 0); transform: translate(-1px, 3px); }
+    80% { clip-path: inset(5% 0 80% 0); transform: translate(3px, -1px); }
+    100% { clip-path: inset(40% 0 20% 0); transform: translate(-3px, 1px); }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-base);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--color-cyan), var(--color-purple));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 10px var(--color-cyan);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide cursor on devices with fine pointer, so custom cursor shows */
+@media (pointer: fine) {
+  * {
+    cursor: none;
+  }
+}
