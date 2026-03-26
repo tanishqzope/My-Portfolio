@@ -3,9 +3,9 @@ export const internships = [
     id: 4,
     role: "Cybersecurity Intern",
     company: "Redynox",
-    duration: "February 2026 - Present (0 Months)",
+    duration: "February 2026 - March 2026 (1 Months)",
     description: "An introductory cybersecurity internship syllabus covering network security fundamentals with Wireshark, hands-on web vulnerability analysis using OWASP ZAP, and professional branding via LinkedIn engagement.",
-    certificateUrl: "#"
+    certificateUrl: "https://res.cloudinary.com/dx1zgcm3j/image/upload/v1774555352/Redynox_Intership_cert_lhouit.png"
   },
   {
     id: 3,
