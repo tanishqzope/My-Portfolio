@@ -2,26 +2,26 @@ export const internships = [
   {
     id: 4,
     role: "Cybersecurity Intern",
-    company: "Redynox",
-    duration: "February 2026 - March 2026 (1 Months)",
-    description: "An introductory cybersecurity internship syllabus covering network security fundamentals with Wireshark, hands-on web vulnerability analysis using OWASP ZAP, and professional branding via LinkedIn engagement.",
-    certificateUrl: "https://res.cloudinary.com/dx1zgcm3j/image/upload/v1774555352/Redynox_Intership_cert_lhouit.png"
-  },
-  {
-    id: 3,
-    role: "Cybersecurity Intern",
     company: "Yhills",
     duration: "January 2026 - Present (6 Months)",
     description: "A two-part progression guiding students from foundational web vulnerability assessments to executing and documenting a comprehensive, real-world end-to-end penetration test.",
     certificateUrl: "#"
   },
   {
-    id: 2,
+    id: 3,
     role: "Cybersecurity Intern",
     company: "Nullclass",
     duration: "December 2025 - Present (6 Months)",
     description: "A comprehensive series of practical, hands-on cybersecurity assignments requiring students to exploit, secure, and meticulously document systems across Docker, Active Directory, live CTFs, and active HackTheBox environments.",
     certificateUrl: "#"
+  },
+  {
+    id: 2,
+    role: "Cybersecurity Intern",
+    company: "Redynox",
+    duration: "February 2026 - March 2026 (1 Months)",
+    description: "An introductory cybersecurity internship syllabus covering network security fundamentals with Wireshark, hands-on web vulnerability analysis using OWASP ZAP, and professional branding via LinkedIn engagement.",
+    certificateUrl: "https://res.cloudinary.com/dx1zgcm3j/image/upload/v1774555352/Redynox_Intership_cert_lhouit.png"
   },
   {
     id: 1,
