@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { ChevronDown, Download, ArrowRight, Github, Linkedin, Twitter, X, Eye } from 'lucide-react';
+import { ChevronDown, Download, ArrowRight, Github, Linkedin,Instagram, Twitter, X, Eye } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Globe from '../components/Globe';
 import DecryptText from '../components/DecryptText';
@@ -63,7 +63,7 @@ export default function Home() {
           {[
             { name: 'GitHub', icon: <Github size={18} />, url: 'https://github.com/tanishqzope' },
             { name: 'LinkedIn', icon: <Linkedin size={18} />, url: 'https://linkedin.com/in/tanishqzope' },
-            { name: 'Instagram', icon: <In size={18} />, url: 'https://www.instagram.com/tanishqzope' }
+            { name: 'Instagram', icon: <Instagram size={18} />, url: 'https://www.instagram.com/tanishqzope' }
           ].map((platform) => (
             <a key={platform.name} href={platform.url} target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-cyber-textSecondary rounded flex items-center justify-center text-cyber-textSecondary hover:text-cyber-cyan hover:border-cyber-cyan hover:box-glow-cyan transition-all group relative">
               {platform.icon}
