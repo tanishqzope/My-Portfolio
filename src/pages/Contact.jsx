@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, MapPin, Send, CheckCircle, Copy, Github, Linkedin, Twitter, Rss, X } from 'lucide-react';
+import { Mail, MapPin, Send, CheckCircle, Copy, Github, Linkedin,Instagram, Twitter, Rss, X } from 'lucide-react';
 import DecryptText from '../components/DecryptText';
 
 export default function Contact() {
@@ -223,7 +223,7 @@ xsFNBGm48SABEACWIxbCZgHQdjRqeFP7gR0HHvigyTkKvyOITBU4ZCnoJFsP6eseHZ6IW6hznfXUMboC
             {[
               { name: 'GitHub', icon: <Github size={20} />, url: 'https://github.com/tanishqzope' },
               { name: 'LinkedIn', icon: <Linkedin size={20} />, url: 'https://linkedin.com/in/tanishqzope' },
-              { name: 'X', icon: <X size={20} />, url: 'https://x.com/tanishqzope' },
+              { name: 'Instagram', icon: <Instagram size={20} />, url: 'https://www.instagram.com/tanishqzope' },
             ].map(platform => (
               <a key={platform.name} href={platform.url} target="_blank" rel="noopener noreferrer" title={platform.name} className="w-12 h-12 bg-cyber-surface1 border border-cyber-border flex items-center justify-center rounded hover:border-cyber-cyan hover:bg-cyber-cyan/10 transition-all text-cyber-textPrimary hover:text-cyber-cyan hover:-translate-y-1">
                 {platform.icon}
