@@ -2,10 +2,10 @@ export const internships = [
   {
     id: 3,
     role: "Cybersecurity Intern",
-    company: "Elevence Skills",
+    company: "ElevanceSkills",
     duration: "December 2025 - May 2025 (6 Months)",
     description: "A comprehensive series of practical, hands-on cybersecurity assignments requiring students to exploit, secure, and meticulously document systems across Docker, Active Directory, live CTFs, and active HackTheBox environments.",
-    certificateUrl: "#"
+    certificateUrl: "https://res.cloudinary.com/dx1zgcm3j/image/upload/v1780401909/ElevanceSkills-Cybersecurity-Internship-Certificate_xggz3t.jpg"
   },
   {
     id: 2,
