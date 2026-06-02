@@ -168,10 +168,10 @@ export default function Home() {
       <section className="w-[100vw] relative left-1/2 -translate-x-1/2 bg-cyber-charcoal py-16 border-t border-b border-cyber-cyan/30 z-10 flex flex-col items-center">
         <div className="max-w-7xl mx-auto w-full px-4 mb-16 flex flex-wrap justify-center gap-6">
           {[
-            { label: "Certifications", value: "14" },
-            { label: "Projects", value: "14" },
-            { label: "Industry Experience", value: "5M" },
-            { label: "CTFs Played", value: "20+" }
+            { label: "Certifications", value: "11" },
+            { label: "Projects", value: "00" },
+            { label: "Industry Experience", value: "00Y 09M" },
+            { label: "Internships", value: "03" }
           ].map((stat, i) => (
             <motion.div 
               key={i}
