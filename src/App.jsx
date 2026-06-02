@@ -19,6 +19,7 @@ import Contact from './pages/Contact';
 import Blogs from './pages/Blogs';
 import BlogPost from './pages/BlogPost';
 import Terminal from './pages/Terminal';
+import ResumeViewer from './pages/ResumeViewer';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -40,6 +41,7 @@ function AnimatedRoutes() {
           <Route path="experience/internships" element={<Internships />} />
           <Route path="blog" element={<Blogs />} />
           <Route path="blog/:id" element={<BlogPost />} />
+          <Route path="resume" element={<ResumeViewer />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>

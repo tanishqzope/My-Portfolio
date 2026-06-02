@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { ChevronDown, Download, ArrowRight, Github, Linkedin, Twitter, X } from 'lucide-react';
+import { ChevronDown, Download, ArrowRight, Github, Linkedin, Twitter, X, Eye } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Globe from '../components/Globe';
 import DecryptText from '../components/DecryptText';
@@ -128,16 +128,15 @@ export default function Home() {
               </span>
             </button>
 
-            <a 
-              href="/resume.pdf"
-              target="_blank" rel="noopener noreferrer"
+            <button 
+              onClick={() => navigate('/resume')}
               className="group relative px-8 py-3 bg-cyan-purple border-none font-orbitron uppercase text-cyber-textPrimary tracking-wider box-glow-purple transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 flex items-center justify-center cursor-pointer"
             >
               <div className="absolute inset-0 bg-cyan-purple opacity-0 group-hover:opacity-100 transition-opacity blur-md z-[-1]"></div>
               <span className="flex items-center gap-2">
-                Download Resume <Download size={16} className="group-hover:translate-y-1 transition-transform" />
+                View PDF <Eye size={16} className="group-hover:scale-110 transition-transform" />
               </span>
-            </a>
+            </button>
           </div>
         </div>
 
