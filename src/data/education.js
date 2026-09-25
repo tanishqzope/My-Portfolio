@@ -5,7 +5,7 @@ export const education = [
     institution: "PCET's Pimpri Chinchwad University",
     duration: "2026-Present",
     grade: "--",
-    description: "Focused on Programming Languages, Database Management, Computer Networks, Operating Systems, and Cybersecurity Fundamentals.",
+    description: "--",
     location: "Pune, Maharastra, India"
   },
   {
