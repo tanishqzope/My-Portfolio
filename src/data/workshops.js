@@ -1,5 +1,25 @@
 export const workshops = [
   {
+    id: 6,
+    name: "PCU Python Bootcamp",
+    issuer: "Pimpri Chinchwad University",[cite: 1]
+    date: "10 September 2026",[cite: 1]
+    image: "https://res.cloudinary.com/dx1zgcm3j/image/upload/v1790314478/Tanishq_Zope_Certificate_Python_Workshop_10_sep_blfdc5.jpg", 
+    images: [""], // Multiple certificates example
+    description: "A hands-on bootcamp organized by the Department of Computer Science & Engineering under PCU's Developers Club, focusing on mastering core Python programming concepts, logic building, and foundational software development practices.",[cite: 1]
+    skills: [
+        "Python Programming",[cite: 1]
+        "Core Python Concepts",[cite: 1]
+        "Control Flow & Loops",
+        "Functions & Modularity",
+        "Basic Data Structures (Lists, Tuples, Dictionaries)",
+        "Problem Solving & Logic Building",[cite: 1]
+        "Object-Oriented Programming (OOP) Basics",
+        "Scripting Fundamentals"
+    ],
+    category: "Programming & Development"
+},
+  {
     id: 5,
     name: "IIT Bombay Techfest 2025 - Ethical Hacking Workshop",
     issuer: "IIT Bombay Techfest 2025",
