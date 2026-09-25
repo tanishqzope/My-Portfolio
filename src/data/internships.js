@@ -1,9 +1,25 @@
 export const internships = [
   {
+    id: 5,
+    role: "Cybersecurity Intern",
+    company: "Codec Technologies",
+    duration: "August 2026 - November 2026 (3 Months)",
+    description: "--",
+    certificateUrl: "--"
+  },
+  {
+    id: 4,
+    role: "Cybersecurity Intern",
+    company: "BharatSkillZ",
+    duration: "May 2026 - June 2026 (2 Months)",
+    description: "Completed a Cyber Security Internship at BharatSkillz focused on offensive and defensive security. Conducted OWASP-aligned web application penetration testing, identifying 12+ vulnerabilities (SQLi, XSS, IDOR) and authoring a 19-page audit report with CVSS v3.1 scoring and remediation strategies. Additionally, executed network reconnaissance using Kali Linux, Nmap, and Wireshark to map subnets, identify risks, and deliver actionable network hardening measures.",
+    certificateUrl: "https://res.cloudinary.com/dx1zgcm3j/image/upload/v1790313584/BharatSkillz_Internship_Completion_Certificate.png_page-0001_z2vnek.jpg"
+  },
+  {
     id: 3,
     role: "Cybersecurity Intern",
     company: "ElevanceSkills",
-    duration: "December 2025 - May 2025 (6 Months)",
+    duration: "December 2025 - May 2026 (6 Months)",
     description: "A comprehensive series of practical, hands-on cybersecurity assignments requiring students to exploit, secure, and meticulously document systems across Docker, Active Directory, live CTFs, and active HackTheBox environments.",
     certificateUrl: "https://res.cloudinary.com/dx1zgcm3j/image/upload/v1780401909/ElevanceSkills-Cybersecurity-Internship-Certificate_xggz3t.jpg"
   },
