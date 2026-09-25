@@ -1,5 +1,14 @@
 export const education = [
   {
+    id: 4,
+    degree: "Bachelor of Technology in Computer Science and Engineering",
+    institution: "PCET's Pimpri Chinchwad University",
+    duration: "2026-Present",
+    grade: "--",
+    description: "Focused on Programming Languages, Database Management, Computer Networks, Operating Systems, and Cybersecurity Fundamentals.",
+    location: "Pune, Maharastra, India"
+  },
+  {
     id: 3,
     degree: "Diploma In Information Technology",
     institution: "Government Polytechnic Mumbai",
