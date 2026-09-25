@@ -5,7 +5,7 @@ export const workshops = [
     issuer: "Pimpri Chinchwad University",
     date: "10 September 2026",
     image: "https://res.cloudinary.com/dx1zgcm3j/image/upload/v1790314478/Tanishq_Zope_Certificate_Python_Workshop_10_sep_blfdc5.jpg", 
-    images: [""], // Multiple certificates example
+    images: ["https://res.cloudinary.com/dx1zgcm3j/image/upload/v1790314478/Tanishq_Zope_Certificate_Python_Workshop_10_sep_blfdc5.jpg"], // Multiple certificates example
     description: "A hands-on bootcamp organized by the Department of Computer Science & Engineering under PCU's Developers Club, focusing on mastering core Python programming concepts, logic building, and foundational software development practices.",
     skills: ["Python Programming", "Core Python Concepts", "Control Flow & Loops", "Functions & Modularity", "Basic Data Structures (Lists, Tuples, Dictionaries)", "Problem Solving & Logic Building", "Object-Oriented Programming (OOP) Basics", "Scripting Fundamentals"],
     category: "Programming & Development"
